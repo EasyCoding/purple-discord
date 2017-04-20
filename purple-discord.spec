@@ -56,5 +56,5 @@ chmod 755 %{buildroot}%{_libdir}/purple-2/lib%{plugin_name}.so
 %{_datadir}/pixmaps/pidgin/protocols/*/%{plugin_name}.png
 
 %changelog
-* Thu Apr 20 2016 Vitaly Zaitsev <vitaly@easycoding.org> - 0-1.20170420git5c2b3ee
+* Thu Apr 20 2017 Vitaly Zaitsev <vitaly@easycoding.org> - 0-1.20170420git5c2b3ee
 - First SPEC release.
