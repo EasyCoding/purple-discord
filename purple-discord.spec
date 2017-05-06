@@ -47,9 +47,9 @@ export LDFLAGS="%{__global_ldflags}"
 %make_install
 
 %files
-%{_libdir}/purple-2/lib%{plugin_name}.so
 %license LICENSE
 %doc README.md
+%{_libdir}/purple-2/lib%{plugin_name}.so
 
 %files -n pidgin-%{plugin_name}
 %{_datadir}/pixmaps/pidgin/protocols/*/%{plugin_name}.png
