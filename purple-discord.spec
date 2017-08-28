@@ -1,12 +1,12 @@
 %global plugin_name discord
 
-%global commit0 5263affbcc73a5a98549a89ff5dfa7dd75cc9f75
+%global commit0 4397461c0e4452ef926915dc0b625f4255a6b02f
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
-%global date 20170608
+%global date 20170823
 
 Name: purple-%{plugin_name}
 Version: 0
-Release: 9.%{date}git%{shortcommit0}%{?dist}
+Release: 10.%{date}git%{shortcommit0}%{?dist}
 Summary: Discord plugin for libpurple
 
 License: GPLv3+
@@ -55,6 +55,9 @@ export LDFLAGS="%{__global_ldflags}"
 %{_datadir}/pixmaps/pidgin/protocols/*/%{plugin_name}.png
 
 %changelog
+* Mon Aug 28 2017 Vitaly Zaitsev <vitaly@easycoding.org> - 0-10.20170823git4397461
+- Updated to latest snapshot.
+
 * Thu Aug 03 2017 Fedora Release Engineering <releng@fedoraproject.org> - 0-9.20170608git5263aff
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Binutils_Mass_Rebuild
 
