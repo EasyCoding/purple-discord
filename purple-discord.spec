@@ -16,6 +16,7 @@ Source0: %{url}/archive/%{commit0}.tar.gz#/%{name}-%{shortcommit0}.tar.gz
 BuildRequires: pkgconfig(json-glib-1.0)
 BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(purple)
+BuildRequires: gettext-devel
 BuildRequires: gcc
 
 %package -n pidgin-%{plugin_name}
@@ -45,9 +46,9 @@ export LDFLAGS="%{__global_ldflags}"
 
 %install
 %make_install
-%find_lang %{plugin_name}
+%find_lang %{name}
 
-%files -f %{plugin_name}.lang
+%files -f %{name}.lang
 %license LICENSE
 %doc README.md
 %{_libdir}/purple-2/lib%{plugin_name}.so
