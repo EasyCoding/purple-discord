@@ -45,8 +45,9 @@ export LDFLAGS="%{__global_ldflags}"
 
 %install
 %make_install
+%find_lang %{plugin_name}
 
-%files
+%files -f %{plugin_name}.lang
 %license LICENSE
 %doc README.md
 %{_libdir}/purple-2/lib%{plugin_name}.so
