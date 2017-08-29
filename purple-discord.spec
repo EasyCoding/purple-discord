@@ -1,8 +1,8 @@
 %global plugin_name discord
 
-%global commit0 4397461c0e4452ef926915dc0b625f4255a6b02f
+%global commit0 9115bd2ff719fcc182a35d4260a424c1774a5590
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
-%global date 20170823
+%global date 20170829
 
 Name: purple-%{plugin_name}
 Version: 0
