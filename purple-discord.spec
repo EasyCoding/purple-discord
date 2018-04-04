@@ -6,7 +6,7 @@
 
 Name: purple-%{plugin_name}
 Version: 0
-Release: 16.%{date}git%{shortcommit0}%{?dist}
+Release: 17.%{date}git%{shortcommit0}%{?dist}
 Summary: Discord plugin for libpurple
 
 License: GPLv3+
@@ -57,7 +57,7 @@ export LDFLAGS="%{__global_ldflags}"
 %{_datadir}/pixmaps/pidgin/protocols/*/%{plugin_name}.png
 
 %changelog
-* Wed Apr 04 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 0-16.20180401git4bea5d7
+* Wed Apr 04 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 0-17.20180401git4bea5d7
 - Updated to latest snapshot.
 
 * Wed Jan 24 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 0-15.20171227git9b7c3ad
