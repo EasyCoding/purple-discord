@@ -40,12 +40,7 @@ purple-discord.
 sed -i -e "s,\r,," README.md
 
 %build
-%if 0%{?fedora}
 %set_build_flags
-%else
-export CFLAGS="%{optflags}"
-export LDFLAGS="%{__global_ldflags}"
-%endif
 %make_build
 
 %install
