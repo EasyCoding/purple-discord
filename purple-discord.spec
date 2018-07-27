@@ -6,7 +6,7 @@
 
 Name: purple-%{plugin_name}
 Version: 0
-Release: 18.%{date}git%{shortcommit0}%{?dist}
+Release: 19.%{date}git%{shortcommit0}%{?dist}
 Summary: Discord plugin for libpurple
 
 License: GPLv3+
@@ -40,7 +40,8 @@ purple-discord.
 sed -i -e "s,\r,," README.md
 
 %build
-%set_build_flags
+export CFLAGS="%{optflags}"
+export LDFLAGS="%{__global_ldflags}"
 %make_build
 
 %install
@@ -56,6 +57,9 @@ sed -i -e "s,\r,," README.md
 %{_datadir}/pixmaps/pidgin/protocols/*/%{plugin_name}.png
 
 %changelog
+* Fri Jul 13 2018 Fedora Release Engineering <releng@fedoraproject.org> - 0-19.20180515gitb895521
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
+
 * Fri May 25 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 0-18.20180515gitb895521
 - Updated to latest snapshot.
 
