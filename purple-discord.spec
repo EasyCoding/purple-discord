@@ -1,12 +1,12 @@
 %global plugin_name discord
 
-%global commit0 84fe76426d0417be6168600b510ae13b7971e317
+%global commit0 a5dd44f717a6f61901441a027a44c2799d42cf77
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
-%global date 20180628
+%global date 20181108
 
 Name: purple-%{plugin_name}
 Version: 0
-Release: 20.%{date}git%{shortcommit0}%{?dist}
+Release: 21.%{date}git%{shortcommit0}%{?dist}
 Summary: Discord plugin for libpurple
 
 License: GPLv3+
@@ -56,6 +56,9 @@ sed -i -e "s,\r,," README.md
 %{_datadir}/pixmaps/pidgin/protocols/*/%{plugin_name}.png
 
 %changelog
+* Wed Nov 21 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 0-21.20181108gita5dd44f
+- Updated to latest snapshot.
+
 * Fri Aug 03 2018 Vitaly Zaitsev <vitaly@easycoding.org> - 0-20.20180628git84fe764
 - Updated to latest snapshot.
 
