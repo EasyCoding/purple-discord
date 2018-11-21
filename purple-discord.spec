@@ -17,6 +17,7 @@ BuildRequires: pkgconfig(json-glib-1.0)
 BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(purple)
 BuildRequires: gettext-devel
+BuildRequires: zlib-devel
 BuildRequires: gcc
 
 %package -n pidgin-%{plugin_name}
