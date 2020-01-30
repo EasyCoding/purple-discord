@@ -6,7 +6,7 @@
 
 Name: purple-%{plugin_name}
 Version: 0
-Release: 25.%{date}git%{shortcommit0}%{?dist}
+Release: 26.%{date}git%{shortcommit0}%{?dist}
 Summary: Discord plugin for libpurple
 
 License: GPLv3+
@@ -58,6 +58,9 @@ sed -i -e "s,\r,," README.md
 %{_datadir}/pixmaps/pidgin/protocols/*/%{plugin_name}.png
 
 %changelog
+* Thu Jan 30 2020 Fedora Release Engineering <releng@fedoraproject.org> - 0-26.20190805git250a8a0
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
+
 * Tue Aug 06 2019 Vitaly Zaitsev <vitaly@easycoding.org> - 0-25.20190805git250a8a0
 - Updated to latest snapshot.
 
