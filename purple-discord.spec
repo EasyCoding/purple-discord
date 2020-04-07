@@ -1,17 +1,17 @@
 %global plugin_name discord
 
-%global commit0 250a8a0512d9f18607b257e448d129dfc0a52467
+%global commit0 db7dc79ee098a0dc4a00cefaf6d488ddddd1202b
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
-%global date 20190805
+%global date 20200405
 
 Name: purple-%{plugin_name}
 Version: 0
-Release: 26.%{date}git%{shortcommit0}%{?dist}
+Release: 27.%{date}git%{shortcommit0}%{?dist}
 Summary: Discord plugin for libpurple
 
 License: GPLv3+
-URL: https://github.com/EionRobb/purple-discord
-Source0: %{url}/archive/%{commit0}.tar.gz#/%{name}-%{shortcommit0}.tar.gz
+URL: https://github.com/EionRobb/%{name}
+Source0: %{url}/archive/%{commit0}/%{name}-%{shortcommit0}.tar.gz
 
 BuildRequires: pkgconfig(json-glib-1.0)
 BuildRequires: pkgconfig(glib-2.0)
@@ -58,6 +58,9 @@ sed -i -e "s,\r,," README.md
 %{_datadir}/pixmaps/pidgin/protocols/*/%{plugin_name}.png
 
 %changelog
+* Tue Apr 07 2020 Vitaly Zaitsev <vitaly@easycoding.org> - 0-27.20200405gitdb7dc79
+- Updated to latest snapshot.
+
 * Thu Jan 30 2020 Fedora Release Engineering <releng@fedoraproject.org> - 0-26.20190805git250a8a0
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
 
