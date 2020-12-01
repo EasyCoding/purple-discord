@@ -20,6 +20,7 @@ BuildRequires: gettext-devel
 BuildRequires: ImageMagick
 BuildRequires: zlib-devel
 BuildRequires: gcc
+BuildRequires: make
 
 %package -n pidgin-%{plugin_name}
 Summary: Adds pixmaps, icons and smileys for Discord protocol
